@@ -1,0 +1,16 @@
+# Pacote ROS para aprendizado do ROS 1
+
+
+
+Tarefas:
+
+Utilize o pacote pratica_ros_1 para criar os seguintes programas:
+
+1) Criar um node que publica uma posicao aleatoria na tela (x, y) do turtlesim
+no topico alvo_aleatorio
+
+2) Criar um programa go_to_xy_aleatorio.py que leia o topico alvo_aleatorio
+e movimente a tartaruga para esta nova posicao
+
+3) Crie um programa chase_turtle.py ("perseguição") que movimenta uma tartaruga
+aleatoriamente e coloca uma 2a tartaruga que irá perseguir a 1a tartaruga

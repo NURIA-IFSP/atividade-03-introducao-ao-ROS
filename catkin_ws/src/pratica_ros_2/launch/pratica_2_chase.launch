@@ -1,0 +1,19 @@
+<launch>
+    
+    <!-- Inicia o no turtlesim_arena.py - cria a arena -->
+    <node name="start_turtlesim_node" pkg="pratica_ros_2" type="turtlesim_arena.py" output="screen">
+    </node>
+
+    <!-- Inicia o gerador de posicoes aleatorias para turtle1-->
+    <node name="random_goal" pkg="pratica_ros_2" type="random_goal.py" output="screen">
+    </node>
+
+    <!-- Inicia o nó go_to_xy.py - Turtle1 começa a se movimentar -->
+    <node name="go_to_xy" pkg="pratica_ros_2" type="go_to_xy_aleatorio.py" output="screen">
+    </node>
+
+    <!-- Inicia o no turtle_chase - começa a perseguição -->
+    <node name="chase_turtle" pkg="pratica_ros_2" type="turtle_chase.py" output="screen">
+    </node>
+
+</launch>
