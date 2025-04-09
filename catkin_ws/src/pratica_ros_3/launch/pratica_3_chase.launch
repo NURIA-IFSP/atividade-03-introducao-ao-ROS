@@ -1,0 +1,28 @@
+<launch>
+    
+    <!-- Inicia o serviço que cria a arena -->
+    <node name="arena_server_node" pkg="pratica_ros_3" type="arena_server.py" output="screen">
+    </node>
+
+    <!-- Inicia o jogo -->
+    <node name="chase_turtles_node" pkg="pratica_ros_3" type="chase_turtlesim_main.py" output="screen">
+    </node>
+
+    <!-- Define a posicao aleatoria para a tartaruga alvo-->
+    <node name="random_goal_node" pkg="pratica_ros_2" type="random_goal.py" output="screen">
+    </node>
+
+    <!-- Define qual tartaruga sera o alvo a cada 30s -->
+    <node name="chase_gen_node" pkg="pratica_ros_3" type="chase_goal.py" output="screen">
+    </node>
+
+    <!-- Alvo inicia a fuga -->
+    <node name="move_goal_node" pkg="pratica_ros_3" type="move_goal_turtle.py" output="screen">
+    </node>
+
+   <!-- Inicia a perseguição -->
+   <node name="chase_turtle_multi_node" pkg="pratica_ros_3" type="turtle_chase_multi.py" output="screen">
+   </node>
+   
+   
+</launch>

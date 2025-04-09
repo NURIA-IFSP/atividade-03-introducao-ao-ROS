@@ -1,0 +1,2 @@
+int64 TurtleNum
+int64 TurtleGoal
